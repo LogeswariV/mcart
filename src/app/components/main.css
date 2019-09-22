@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  padding-bottom: 3%;
+}
+.shopping-cart{
+    margin-bottom: 100px;
+}
+.img {
+  width: 140px;
+  height: 140px;
+}
+.plus-minusButton{
+    border-radius: 50%;
+    background-color: green;
+    color: white;
+    border: none;
+}
+.addCartButton{
+    border: none;
+    background-color: green;
+    color: white;
+}
+.text {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.spacing{
+    margin:5%;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.footerTotal{
+    float:left;
+}
+.footerCheckout{
+    float: right;
+    margin: 2%;
+    background-color: green;
+    border: none;
+    color: white;
+}
+.offerPercent{
+  color: green;
+  font-family: monospace;
+}
+  #modal {
+  left: 50%;
+  margin: -400px 0 0 -32%;
+  position: absolute;
+  width: 65%;
+  box-shadow: 0 3px 7px rgba(0,0,0,.25);
+  box-sizing: border-box;
+  color: black;
+}
+ 
+#modal:target {
+  opacity: 1;
+  top: 50%;
+  visibility: visible
+
+}
+@media screen and (max-width: 700px) {
+  .text {
+    display: initial;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.spacing{
+    margin:0%;
+}
+}
